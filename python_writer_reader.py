@@ -36,7 +36,7 @@ def read_text_files(directory, output_file):
                             rel_path = os.path.relpath(file_path, directory)
                             
                             # Форматируем вывод
-                            outfile.write(f"### Листинг {counter}. {file} \\{rel_path}\n\n")
+                            outfile.write(f"### Листинг – {counter}. {file} \\{rel_path}\n\n")
                             outfile.write(f"```{lang}\n{content}\n```\n\n")
                             counter += 1
                             
